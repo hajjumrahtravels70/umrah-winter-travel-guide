@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A practical guide for UK pilgrims comparing Umrah costs, hotels, travel dates and December arrangements before booking.">
+<title>Planning Umrah from the UK: Costs, Hotels and December Travel</title>
+
+<style>
+:root {
+  --uwp-ink: #182a43;
+  --uwp-ink-soft: #30445e;
+  --uwp-teal: #287d82;
+  --uwp-teal-dark: #1d6268;
+  --uwp-coral: #e58d69;
+  --uwp-paper: #f4f7fa;
+  --uwp-white: #ffffff;
+  --uwp-text: #334155;
+  --uwp-muted: #64748b;
+  --uwp-line: #e1e8ef;
+  --uwp-tint: #edf5f5;
+  --uwp-shadow: 0 14px 38px rgba(24,42,67,.07);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--uwp-paper);
+  color: var(--uwp-text);
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.75;
+}
+
+.uwp-page {
+  width: min(1200px, calc(100% - 36px));
+  margin: 34px auto 54px;
+}
+
+.uwp-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  padding: 48px 52px;
+  border-radius: 22px;
+  color: #fff;
+  background: linear-gradient(120deg,#182a43 0%,#254a63 68%,#287d82 100%);
+  box-shadow: var(--uwp-shadow);
+  isolation: isolate;
+}
+
+.uwp-hero::before,
+.uwp-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.uwp-hero::before {
+  width: 360px;
+  height: 360px;
+  right: -100px;
+  top: -160px;
+  box-shadow: 0 0 0 28px rgba(255,255,255,.035),
+              0 0 0 58px rgba(255,255,255,.025);
+}
+
+.uwp-hero::after {
+  width: 190px;
+  height: 190px;
+  right: 115px;
+  bottom: -135px;
+  border-color: rgba(229,141,105,.55);
+}
+
+.uwp-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+  color: #cce8e7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.uwp-kicker::before {
+  content: "";
+  width: 27px;
+  height: 2px;
+  background: var(--uwp-coral);
+}
+
+.uwp-hero h1 {
+  max-width: 800px;
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: clamp(30px,4.2vw,45px);
+  font-weight: 760;
+  letter-spacing: -.035em;
+  line-height: 1.14;
+}
+
+.uwp-hero p {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(255,255,255,.83);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.uwp-layout {
+  display: grid;
+  grid-template-columns: 268px minmax(0,1fr);
+  gap: 25px;
+  align-items: start;
+  margin-top: 25px;
+}
+
+.uwp-sidebar {
+  position: sticky;
+  top: 22px;
+}
+
+.uwp-toc {
+  overflow: hidden;
+  border: 1px solid var(--uwp-line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--uwp-shadow);
+}
+
+.uwp-toc-head {
+  padding: 20px 21px 17px;
+  color: #fff;
+  background: var(--uwp-ink);
+}
+
+.uwp-toc-head span {
+  display: block;
+  margin-bottom: 4px;
+  color: #a8d5d5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.uwp-toc-head strong {
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.uwp-toc ol {
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+  counter-reset: uwp-toc;
+}
+
+.uwp-toc li {
+  counter-increment: uwp-toc;
+}
+
+.uwp-toc a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: #526277;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-decoration: none;
+  transition: background .2s ease,color .2s ease,transform .2s ease;
+}
+
+.uwp-toc a::before {
+  content: counter(uwp-toc,decimal-leading-zero);
+  flex: 0 0 22px;
+  color: var(--uwp-teal);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.uwp-toc a:hover,
+.uwp-toc a:focus-visible {
+  color: var(--uwp-ink);
+  background: var(--uwp-tint);
+  transform: translateX(2px);
+  outline: none;
+}
+
+.uwp-article {
+  min-width: 0;
+  padding: 42px 46px;
+  border: 1px solid var(--uwp-line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--uwp-shadow);
+}
+
+.uwp-article .uwp-lead {
+  margin: 0 0 18px;
+  color: var(--uwp-ink-soft);
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.uwp-article p {
+  margin: 0 0 16px;
+  color: var(--uwp-text);
+  font-size: 15px;
+}
+
+.uwp-article a {
+  color: var(--uwp-teal-dark);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: rgba(40,125,130,.38);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.uwp-article a:hover {
+  color: #b65d42;
+  text-decoration-color: currentColor;
+}
+
+.uwp-section {
+  padding-top: 29px;
+  margin-top: 31px;
+  border-top: 1px solid var(--uwp-line);
+  scroll-margin-top: 25px;
+}
+
+.uwp-section h2,
+.uwp-ending h2 {
+  margin: 0 0 15px;
+  color: var(--uwp-ink);
+  font-size: clamp(20px,2.6vw,24px);
+  font-weight: 780;
+  letter-spacing: -.025em;
+  line-height: 1.35;
+}
+
+.uwp-section h2 .uwp-number {
+  display: inline-grid;
+  width: 29px;
+  height: 29px;
+  margin-right: 7px;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--uwp-teal);
+  font-size: 12px;
+  vertical-align: 2px;
+}
+
+.uwp-callout {
+  margin: 22px 0;
+  padding: 19px 21px;
+  border: 1px solid #cfe5e4;
+  border-left: 4px solid var(--uwp-teal);
+  border-radius: 10px;
+  background: #f0f8f8;
+}
+
+.uwp-callout strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--uwp-ink);
+  font-size: 14px;
+}
+
+.uwp-callout p { margin: 0; }
+
+.uwp-checklist {
+  margin: 14px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.uwp-checklist li {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 28px;
+  color: var(--uwp-text);
+  font-size: 15px;
+}
+
+.uwp-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--uwp-teal-dark);
+  background: #e4f2f1;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.uwp-ending {
+  margin-top: 34px;
+  padding: 26px 27px;
+  border-radius: 13px;
+  background: linear-gradient(135deg,#182a43,#287d82);
+  color: #fff;
+}
+
+.uwp-ending h2 { color: #fff; }
+.uwp-ending p {
+  margin-bottom: 0;
+  color: rgba(255,255,255,.88);
+}
+
+@media (max-width: 920px) {
+  .uwp-layout { grid-template-columns: 1fr; }
+  .uwp-sidebar { position: static; }
+  .uwp-toc ol {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    column-gap: 6px;
+  }
+  .uwp-article { padding: 34px; }
+}
+
+@media (max-width: 600px) {
+  .uwp-page {
+    width: min(100% - 22px,1200px);
+    margin: 12px auto 30px;
+  }
+  .uwp-hero {
+    min-height: 0;
+    padding: 34px 24px;
+    border-radius: 15px;
+  }
+  .uwp-hero h1 { font-size: 29px; }
+  .uwp-hero p { font-size: 14px; }
+  .uwp-toc ol { grid-template-columns: 1fr; }
+  .uwp-article { padding: 25px 20px; }
+  .uwp-article .uwp-lead { font-size: 16px; }
+  .uwp-article p,
+  .uwp-checklist li { font-size: 14px; }
+  .uwp-section {
+    padding-top: 23px;
+    margin-top: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="uwp-page">
+
+<header class="uwp-hero">
+  <div class="uwp-kicker">A practical guide for UK pilgrims</div>
+  <h1>Planning Umrah from the UK: Budget, December Travel and Booking Advice</h1>
+  <p>How to compare travel arrangements, choose a suitable hotel and prepare for a smoother journey to Makkah and Madinah.</p>
+</header>
+
+<div class="uwp-layout">
+
+<aside class="uwp-sidebar">
+<nav class="uwp-toc" aria-label="Table of contents">
+  <div class="uwp-toc-head">
+    <span>Explore the guide</span>
+    <strong>Table of Contents</strong>
+  </div>
+  <ol>
+    <li><a href="#uwp-intro">Start with your priorities</a></li>
+    <li><a href="#uwp-december">Is December right for you?</a></li>
+    <li><a href="#uwp-budget">Set a realistic budget</a></li>
+    <li><a href="#uwp-inclusions">Compare package inclusions</a></li>
+    <li><a href="#uwp-hotels">Choose the right hotel</a></li>
+    <li><a href="#uwp-duration">Decide your stay length</a></li>
+    <li><a href="#uwp-flights">Review flights and transfers</a></li>
+    <li><a href="#uwp-family">Plan for your group</a></li>
+    <li><a href="#uwp-documents">Prepare documents</a></li>
+    <li><a href="#uwp-booking">Book with clear information</a></li>
+    <li><a href="#uwp-checklist">Before you depart</a></li>
+  </ol>
+</nav>
+</aside>
+
+<main class="uwp-article">
+
+<section id="uwp-intro" style="margin-top:0;padding-top:0;border-top:0;">
+<p class="uwp-lead">
+Planning Umrah involves more than finding a flight and a hotel. You need to consider your travel dates, accommodation, transport and the needs of everyone travelling with you. Comparing <a href="https://hajjumrahtravels.co.uk/cheap-umrah-packages/">affordable Umrah package choices</a> can help you understand the range of arrangements available before you make a decision.
+</p>
+<p>A suitable package should fit your budget and make the practical parts of the journey manageable. A very low headline price may not tell you everything about the hotel, room type or flight arrangements. Take time to compare the details and ask questions before paying a deposit.</p>
+<p>This guide explains how to make those comparisons, particularly if you are considering travelling from the UK in December.</p>
+</section>
+
+<section class="uwp-section" id="uwp-december">
+<h2><span class="uwp-number">01</span> Is December a Good Time to Perform Umrah?</h2>
+<p>December can suit people who want to plan travel around work leave or school holidays. The cooler season may also make time outdoors more comfortable than the hottest months, although temperatures can still vary and evenings may feel cool.</p>
+<p>There is no single best week for everyone. Early December may offer different availability from the Christmas and New Year period. Families often have fewer dates to choose from, while travellers with flexible schedules may be able to compare a wider range of departures.</p>
+<p>Before settling on dates, review the <a href="https://hajjumrahtravels.co.uk/december-umrah-packages/">December Umrah package options</a> and confirm what is available for your preferred departure airport. The published choices include different hotel categories and stay lengths, but flight availability and final prices should always be checked for the dates you select.</p>
+<div class="uwp-callout">
+<strong>Planning tip</strong>
+<p>Compare at least two sets of travel dates if your schedule allows. A small change in departure day can affect flight choices, hotel availability and the total price.</p>
+</div>
+</section>
+
+<section class="uwp-section" id="uwp-budget">
+<h2><span class="uwp-number">02</span> Set a Realistic Budget Before You Search</h2>
+<p>Start with the amount you can comfortably spend on the whole trip. Then separate the main costs: flights, accommodation, transfers, meals and personal spending. This makes it easier to compare packages on equal terms.</p>
+<p>Ask whether the advertised price is per person and which room occupancy it assumes. A twin room, triple room and quad room can produce different prices per traveller. Check whether a child sharing with adults is priced differently.</p>
+<p>Keep a reserve for costs that may not be part of the package. These could include meals, extra baggage, local transport, travel insurance or personal purchases. A realistic budget helps avoid choosing a package that becomes expensive once additional costs are added.</p>
+</section>
+
+<section class="uwp-section" id="uwp-inclusions">
+<h2><span class="uwp-number">03</span> Compare What Each Package Actually Includes</h2>
+<p>Package names can sound similar even when the arrangements are different. One offer may include return flights and transfers, while another may quote separately for some services. Read the written itinerary rather than relying only on a headline or social media advertisement.</p>
+<p>Before booking, ask the provider to confirm these points:</p>
+<ul class="uwp-checklist">
+<li>Return flight details, airline and baggage allowance.</li>
+<li>Hotel names in Makkah and Madinah.</li>
+<li>Room type, occupancy and check-in arrangements.</li>
+<li>Visa assistance and any applicable requirements or fees.</li>
+<li>Airport transfers and transport between the two cities.</li>
+<li>Meals, ziyarat or other services, where offered.</li>
+<li>Deposit, balance due date and cancellation conditions.</li>
+</ul>
+<p>If a service is not clearly listed, ask whether it is included, optional or payable separately. Keep the response with your booking documents.</p>
+</section>
+
+<section class="uwp-section" id="uwp-hotels">
+<h2><span class="uwp-number">04</span> Choose a Hotel for Location and Comfort</h2>
+<p>Star ratings provide a broad idea of hotel standards, but they do not tell you everything about the location. A hotel that is further from the Haram may require more walking or a shuttle journey. That can matter if you are travelling with older relatives, children or anyone with limited mobility.</p>
+<p>In Makkah, ask for the hotel's name and its route to Masjid al-Haram. In Madinah, check the distance and walking route to Masjid an-Nabawi. Ask whether the route involves steep paths, busy roads or shuttle arrangements.</p>
+<p>Also confirm the room facilities. Check the number of beds, lift access, bathroom arrangements and whether family rooms are available. If the hotel may be changed, ask what standard and location the replacement must meet.</p>
+</section>
+
+<section class="uwp-section" id="uwp-duration">
+<h2><span class="uwp-number">05</span> Decide How Long You Want to Stay</h2>
+<p>A seven-night trip may suit people with limited annual leave, but the schedule can feel full when it includes two cities. A ten-night stay offers more time to settle in, while fourteen nights can give you a slower pace and more flexibility.</p>
+<p>Look at how the nights are split between Makkah and Madinah. Some travellers want extra time near Masjid al-Haram, while others prefer a balanced stay in both cities. Your choice should reflect your priorities rather than simply the total number of nights.</p>
+<p>Allow for travel between cities and avoid planning every day too tightly. Rest is important, especially after a long international flight.</p>
+</section>
+
+<section class="uwp-section" id="uwp-flights">
+<h2><span class="uwp-number">06</span> Review Flights and Ground Transfers</h2>
+<p>Check whether the flight is direct or includes a stopover. Compare the full journey time, departure and arrival times, baggage rules and airport arrangements. A lower fare may involve a longer connection or less convenient arrival time.</p>
+<p>Confirm whether you will arrive in Jeddah or Madinah and how you will reach your first hotel. If your itinerary includes both cities, ask how the intercity journey is arranged and whether it is part of the quoted price.</p>
+<p>Do not assume that transport is included just because it appears in a package description. Ask for written confirmation of the service, vehicle type where relevant and meeting instructions at the airport.</p>
+</section>
+
+<section class="uwp-section" id="uwp-family">
+<h2><span class="uwp-number">07</span> Make the Plan Work for Your Group</h2>
+<p>Families and groups often have different needs. Parents may need suitable room arrangements for children, while older travellers may prefer shorter walking distances and more time to rest. Discuss these needs before selecting a hotel or flight.</p>
+<p>If someone requires wheelchair assistance or airport support, arrange it with the airline or relevant provider in advance. Keep essential medicines in hand luggage and carry a note of important emergency contacts.</p>
+<p>Agree on a simple meeting point in crowded areas. Save the hotel name and address on each traveller's phone, and make sure everyone knows how to contact the group leader.</p>
+</section>
+
+<section class="uwp-section" id="uwp-documents">
+<h2><span class="uwp-number">08</span> Prepare Your Documents and Travel Cover</h2>
+<p>Check your passport details and expiry date well before departure. Saudi entry and Umrah requirements can change, so confirm the current rules for your nationality and circumstances through official guidance before travelling.</p>
+<p>Keep digital and printed copies of your passport details, booking confirmation, flight itinerary and hotel information. Check whether your travel insurance covers medical needs, cancellation, baggage and travel disruption. Read the policy exclusions as well as the headline benefits.</p>
+<p>For UK flight-inclusive bookings, check whether ATOL protection applies. Where it does, request an ATOL Certificate and check that the services you have booked are listed on it.</p>
+</section>
+
+<section class="uwp-section" id="uwp-booking">
+<h2><span class="uwp-number">09</span> Choose a Travel Provider That Explains the Details</h2>
+<p>A responsible travel provider should explain the itinerary, price, accommodation and payment conditions in plain language. Check its contact information and read customer feedback from more than one source. Reviews can help you identify common strengths or recurring concerns, but they should not replace written booking information.</p>
+<p>You can review the services and travel information from <a href="https://hajjumrahtravels.co.uk/">Hajj Umrah Travels</a> as part of your research. As with any provider, compare the actual itinerary and ask for confirmation of the details that matter to your trip.</p>
+<p>Do not pay under pressure. Make sure you understand the deposit, final payment date, cancellation rules and process for handling flight or hotel changes. Keep receipts and all booking communications in one place.</p>
+</section>
+
+<section class="uwp-section" id="uwp-checklist">
+<h2><span class="uwp-number">10</span> A Simple Checklist Before Departure</h2>
+<p>Use this final check a few days before leaving the UK:</p>
+<ul class="uwp-checklist">
+<li>Reconfirm flight times and baggage allowance.</li>
+<li>Check hotel names, room details and arrival instructions.</li>
+<li>Make sure passports and required documents are ready.</li>
+<li>Save transfer details and emergency contact numbers.</li>
+<li>Pack comfortable footwear, suitable clothing and medicines.</li>
+<li>Review the basic steps of Umrah before travelling.</li>
+<li>Keep some funds available for personal expenses.</li>
+</ul>
+<p>These small checks can reduce last-minute stress and help you focus on the purpose of your journey.</p>
+</section>
+
+<div class="uwp-ending">
+<h2>Final Thoughts</h2>
+<p>A well-planned Umrah trip starts with clear information. Compare the full cost, check hotel locations, understand the flights and make sure the arrangements suit the people travelling with you. December may work well for some UK families, while other dates may offer more flexibility. Choose the option that fits your schedule and budget, then keep your booking details organised so you can travel with greater confidence.</p>
+</div>
+
+</main>
+</div>
+</div>
+</body>
+</html>
